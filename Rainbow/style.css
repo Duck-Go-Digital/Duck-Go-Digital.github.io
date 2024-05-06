@@ -1,0 +1,19 @@
+html {
+  cursor: none;
+  scrollbar-width: none;
+}
+body {
+   cursor: url("https://www.clker.com/cliparts/m/F/E/0/Q/D/rainbow-mouse-md.png"), auto;
+}
+
+.trail { 
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-image: url("https://www.clker.com/cliparts/m/F/E/0/Q/D/rainbow-mouse-md.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+
