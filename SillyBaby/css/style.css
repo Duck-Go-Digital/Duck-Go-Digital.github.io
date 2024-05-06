@@ -1,0 +1,69 @@
+.bounding-box {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  -webkit-animation: x 13s linear infinite alternate;
+  animation: x 13s linear infinite alternate;
+}
+
+.smiley {
+  -webkit-animation: y 7s linear infinite alternate;
+  animation: y 7s linear infinite alternate;
+  pointer-events: none;
+}
+
+.rotate {
+  background-color: transparent;
+  width: 218px;
+  height: 218px;
+  -webkit-animation: rotate 7s linear infinite;
+  animation: rotate 7s linear infinite;
+}
+
+@-webkit-keyframes x {
+  100% {
+      -webkit-transform: translateX(calc(100vw - 218px));
+      transform: translateX(calc(100vw - 218px));
+  }
+}
+
+@keyframes x {
+  100% {
+      -webkit-transform: translateX(calc(100vw - 218px));
+      transform: translateX(calc(100vw - 218px));
+  }
+}
+
+@-webkit-keyframes y {
+  100% {
+      -webkit-transform: translateY(calc(100vh - 218px));
+      transform: translateY(calc(100vh - 218px));
+  }
+}
+
+@keyframes y {
+  100% {
+      -webkit-transform: translateY(calc(100vh - 218px));
+      transform: translateY(calc(100vh - 218px));
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
