@@ -1,69 +1,67 @@
-.bounding-box {
+#nav { 
+  background-color: #000000;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
-  width: 0px;
-  height: 0px;
-  -webkit-animation: x 13s linear infinite alternate;
-  animation: x 13s linear infinite alternate;
+  z-index: 1000;
+  text-align: center; 
+  word-spacing: 10px;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  margin: 0;
 }
-
-.smiley {
-  -webkit-animation: y 7s linear infinite alternate;
-  animation: y 7s linear infinite alternate;
-  pointer-events: none;
+#nav, #index, #Games, #Apps, #Youtube { color: #ffffff; text-decoration: none; font-family: "Arial", sans-serif; font-size: 20px; transition: 0.3s ease; } #index:hover { color: rgb(255, 135, 0); cursor: pointer; } #thecuretosadness { display: inline-block; vertical-align: middle; } #thecuretosadness:hover { animation: spin 1s linear infinite; cursor: pointer; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } /* I don't know why it did this */ 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }
-
-.rotate {
-  background-color: transparent;
-  width: 218px;
-  height: 218px;
-  -webkit-animation: rotate 7s linear infinite;
-  animation: rotate 7s linear infinite;
+#gamecontainer {
+  border: black 7px solid;
+  background: linear-gradient(to right, #ff7300, #ff0000, #ffa200, #fbff00, #ff8800);
+  text-align: center;
+  font-family: cursive;
+  color: black;
 }
+#gamecontainer:hover {
+  animation: hove 0.3s forwards ease-in;
 
-@-webkit-keyframes x {
+  cursor: pointer;
+}
+@keyframes hove {
+  0% {
+    transform: scale(80%);
+  }
+  50% {
+    transform: scale(100%);
+  }
   100% {
-      -webkit-transform: translateX(calc(100vw - 218px));
-      transform: translateX(calc(100vw - 218px));
+    transform: scale(150%);
   }
+  
+}
+#linkerforaduck {
+  text-decoration: none;
 }
 
-@keyframes x {
+#spinner {
+  font-weight: thin;
+  animation: spin 100s linear infinite;
+}
+#spinner:hover {
+  cursor: pointer;
+  animation: scale 1ms linear infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
   100% {
-      -webkit-transform: translateX(calc(100vw - 218px));
-      transform: translateX(calc(100vw - 218px));
-  }
-}
-
-@-webkit-keyframes y {
-  100% {
-      -webkit-transform: translateY(calc(100vh - 218px));
-      transform: translateY(calc(100vh - 218px));
-  }
-}
-
-@keyframes y {
-  100% {
-      -webkit-transform: translateY(calc(100vh - 218px));
-      transform: translateY(calc(100vh - 218px));
-  }
-}
-
-@-webkit-keyframes rotate {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-
-  to {
-      -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-      transform: rotate(0deg);
-  }
-
-  to {
-      transform: rotate(360deg);
+    transform: scale(3);
   }
 }

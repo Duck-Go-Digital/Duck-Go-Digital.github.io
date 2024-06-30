@@ -1,0 +1,10 @@
+.container1 {
+  background-image: url('raw.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
